@@ -14,7 +14,7 @@ print(f'Chatbot: {chatbot_response}')
 def get_response(prompt):
     from bardapi import Bard
     import os
-    os.environ['_BARD_API_KEY']="XQiamKh5-RoYcL55fi-Kx8SoqcfzuhJNTPLv4cHBXbTEVO2vtkBLgZBtxXUrI41ubHSowQ."
+    os.environ['_BARD_API_KEY']="BARD API KEY HERE"
 
     input_text = prompt
     chatbot_response = Bard().get_answer(input_text)['content']
@@ -31,7 +31,7 @@ def chatbot_session():
     import os
     import requests
 
-    os.environ['_BARD_API_KEY']="XQiamKh5-RoYcL55fi-Kx8SoqcfzuhJNTPLv4cHBXbTEVO2vtkBLgZBtxXUrI41ubHSowQ."
+    os.environ['_BARD_API_KEY']="BARD API KEY HERE"
 
     session = requests.Session()
     session.headers = {
