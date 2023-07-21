@@ -29,9 +29,9 @@ class Vehicle(Entity):
         self.position = position
         self.in_vehicle = False
         self.velocity = 0
-        self.acceleration = acceleration  # Adjust the acceleration as needed
-        self.friction = friction  # Adjust the friction as needed
-        self.max_velocity = max_velocity  # Adjust the maximum velocity as needed
+        self.acceleration = acceleration
+        self.friction = friction
+        self.max_velocity = max_velocity
         self.can_turn = False
         self.velocity_text = Text(position=(-0.5, 0.4), origin=(0, 0), text=f'Speedometer: {self.velocity:.0f}mph', scale=1)
         self.velocity_text.enabled = False
